@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Gupta | Frontend Developer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+            <!-- Brand Logo -->
+            <a href="#home" class="logo">Abhishek<span></span></a>
+
+            <!-- Right Side: Links + Toggle Button -->
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Theme Switcher Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Hamburger -->
+                <button class="menu-btn" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+            <h1>Abhishek Gupta</h1>
+            <h2><span id="typing"></span></h2>
+            <p>
+                Passionate Frontend Developer creating modern,
+                responsive, and user-friendly web applications.
+            </p>
+            
+            <!-- Hero Buttons & Socials -->
+            <div style="margin-top: 20px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                <!-- Resume Download Link -->
+                <a href="Resume.pdf" download="Abhishek_Gupta_Resume.pdf" class="btn" style="padding: 10px 20px; background: var(--primary, #00d4ff); color: #000; font-weight: 600; border-radius: 5px; text-decoration: none;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                
+                <div class="social-icons" style="display: flex; gap: 10px;">
+                    <a href="https://github.com/abhishekgupta" target="_blank" aria-label="GitHub"><i class="fab fa-github" style="font-size: 1.5rem;"></i></a>
+                    <a href="https://linkedin.com/in/abhishek-gupta" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                    <a href="mailto:abhishekguptaa7589@gmail.com" aria-label="Email"><i class="fas fa-envelope" style="font-size: 1.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Abhishek Gupta Profile">
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Frontend Developer passionate about building modern,
+            responsive, and interactive web interfaces using HTML, CSS,
+            JavaScript, and React. With a strong engineering background, I focus on writing clean, scalable code and turning UI designs into seamless user experiences.
+        </p>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p><span>HTML5</span><span>95%</span></p>
+            <div class="progress"><div class="html" style="width: 95%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><span>CSS3 / Flexbox & Grid</span><span>90%</span></p>
+            <div class="progress"><div class="css" style="width: 90%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><span>JavaScript (ES6+)</span><span>85%</span></p>
+            <div class="progress"><div class="js" style="width: 85%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><span>React.js</span><span>80%</span></p>
+            <div class="progress"><div class="react" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><span>Git & GitHub</span><span>85%</span></p>
+            <div class="progress"><div class="git" style="width: 85%;"></div></div>
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+        <h2>Education</h2>
+        
+        <!-- B.Tech -->
+        <div class="card" style="margin-bottom: 15px;">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p style="color: var(--primary, #00d4ff); font-weight: 500;">Computer Science & Engineering</p>
+            <p>Lovely Professional University | 2022 - 2026</p>
+        </div>
+
+        <!-- Class 12th -->
+        <div class="card" style="margin-bottom: 15px;">
+            <h3>Senior Secondary Education (Class XII)</h3>
+            <p style="color: var(--primary, #00d4ff); font-weight: 500;">Physics, Chemistry & Mathematics (PCM)</p>
+            <p>CBSE Board | 2020 - 2022</p>
+        </div>
+
+        <!-- Class 10th -->
+        <div class="card">
+            <h3>Secondary School Education (Class X)</h3>
+            <p style="color: var(--primary, #00d4ff); font-weight: 500;">General Science & Mathematics</p>
+            <p>CBSE Board | 2019 - 2020</p>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Frontend Developer Intern</h3>
+                <p style="color: var(--primary, #00d4ff); font-weight: 500;">Sahind Technologies Pvt. Ltd.</p>
+                <span>June 2025 - August 2025</span>
+                <p>Built responsive web components using React.js and CSS, optimized site performance, and collaborated on dynamic interface features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Portfolio Project" onerror="this.src='https://via.placeholder.com/400x220?text=Portfolio+Project'">
+                <h3>Portfolio Website</h3>
+                <p>Modern responsive portfolio build with high performance and smooth animation effects.</p>
+                <div class="project-card-actions">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="https://github.com/abhishekgupta" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.png" alt="Weather App Project" onerror="this.src='https://via.placeholder.com/400x220?text=Weather+App'">
+                <h3>Weather App</h3>
+                <p>Real-time weather dynamic dashboard fetching data from REST APIs.</p>
+                <div class="project-card-actions">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="https://github.com/abhishekgupta" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CERTIFICATES ================= -->
+<!-- ================= CERTIFICATES ================= -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="project-container">
+            <!-- Certificate 1 -->
+            <div class="project-card">
+                <img src="images/certificate1.jpg" alt="Frontend Certificate" onerror="this.src='https://via.placeholder.com/400x220?text=Certificate+Preview'">
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS & JavaScript Professional Certification</p>
+                <div class="project-card-actions" style="margin-top: 10px; display: flex; gap: 10px;">
+                    <!-- View & Download (Path bina images/ ke, kyunki file root me hai) -->
+                    <a href="Certificate1.pdf" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="Certificate1.pdf" download="Frontend_Certificate.pdf"><i class="fas fa-download"></i> Download</a>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="project-card">
+                <img src="images/certificate2.jpg" alt="React Certificate" onerror="this.src='https://via.placeholder.com/400x220?text=Certificate+Preview'">
+                <h3>React Development</h3>
+                <p>React & Modern JavaScript Enterprise Certification</p>
+                <div class="project-card-actions" style="margin-top: 10px; display: flex; gap: 10px;">
+                    <!-- View & Download -->
+                    <a href="Certificate2.pdf" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="Certificate2.pdf" download="React_Certificate.pdf"><i class="fas fa-download"></i> Download</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <!-- Web3Forms Integration -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Correct Access Key without extra Y -->
+        <input type="hidden" name="access_key" value="d928bd05-ce58-4c70-bd91-70f0f109fc2a">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Abhishek Gupta | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="https://github.com/abhishekgupta" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/abhishek-gupta" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:abhishekguptaa7589@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
